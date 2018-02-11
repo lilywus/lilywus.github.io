@@ -113,14 +113,18 @@ h4 {
 }
 
 #content img {
-    display:block;
-    margin:20px auto;
+    float:left;
+    margin:20px;
+    width:200px;
 }
 
-@media only screen and (min-width:320px) {
+@media only screen and (max-width:320px) {
     #content img {
-        float:left;
-        margin:20px;
+        display:block;
         width:200px;
+        margin:20px auto 0 auto;
+    }
+    #content {
+        width:300px;
     }
 }
