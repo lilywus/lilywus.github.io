@@ -27,7 +27,7 @@ a:visited {
 	color: #666;
 	text-decoration: none;
 }
-a:hover, a:active, a:focus {
+a:hover {
 	color: #CCC;
 	text-decoration: none;
 }
@@ -108,23 +108,13 @@ h4 {
 #content {
     width:500px;
     margin:20px auto;
+    padding-bottom:10px;
     font-size:14px;
     line-height:1.7em;
 }
 
-#content img {
+#mainimg {
     float:left;
     margin:20px;
     width:200px;
-}
-
-@media only screen and (max-width:320px) {
-    #content img {
-        display:block;
-        width:200px;
-        margin:20px auto 0 auto;
-    }
-    #content {
-        width:300px;
-    }
 }
