@@ -154,11 +154,13 @@ h4 {
 }
 
 .cell {
+    width:100%;
     background-size:contain;
+    background:no-repeat;
 }
 
 .cell:hover .appear {
-    opacity:1;
+    opacity:.8;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
