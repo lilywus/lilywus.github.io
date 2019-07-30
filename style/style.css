@@ -142,7 +142,7 @@ h4 {
 }
 
 .site:hover {
-    border:#000;
+    border:1px solid #000;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
