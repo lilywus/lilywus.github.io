@@ -132,20 +132,19 @@ h4 {
 }
 
 .site {
-    /*border:0;*/
-    height:300px;
     width:100%;
-    padding:5px;
-    text-align:center;
-    vertical-align:center;
+    height:300px;
+    padding:30px 0;
+    background-size:cover;
 }
 
 .appear {
     opacity:0;
     width:100%;
-    padding:3px;
+    line-height:200px;
     background:#000;
     color:#fff;
+    text-align:center;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -153,13 +152,7 @@ h4 {
     transition: all .3s ease-in-out;
 }
 
-.cell {
-    width:100%;
-    background-size:contain;
-    background:no-repeat;
-}
-
-.cell:hover .appear {
+.site:hover .appear {
     opacity:.8;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
