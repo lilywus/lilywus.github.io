@@ -164,7 +164,7 @@ h4 {
 }
 
 .site:hover .appear {
-    opacity:.9;
+    opacity:.1;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
