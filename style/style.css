@@ -101,6 +101,9 @@ h4 {
     #menu a {
         width:40%;
     }
+    #menu {
+        margin-top:50px;
+    }
 }
 
 #menu a:link, a:visited, a:focus {
