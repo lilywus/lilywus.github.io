@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 	font: 14px "Trebuchet MS", Helvetica, sans-serif;
 	margin: 0;
@@ -128,6 +132,10 @@ h4 {
     float:left;
     margin:20px;
     width:25%;
+}
+
+.project {
+    text-align: center;
 }
 
 .site {
