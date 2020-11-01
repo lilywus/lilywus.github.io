@@ -135,7 +135,12 @@ h4 {
 }
 
 .project {
-    text-align: center;
+    margin:15px auto;
+    text-align:center;
+}
+
+.project a:hover {
+    background: #222;
 }
 
 .site {
