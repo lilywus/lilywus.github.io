@@ -36,14 +36,6 @@ a:hover {
 	text-decoration: none;
 }
 
-b {
-    color:#83C8FF;
-}
-
-i {
-    color:#0EE400;
-}
-
 h1 {
     font:30px Verdana, Geneva, sans-serif;
 }
@@ -58,6 +50,10 @@ h3 {
 
 h4 {
     font:18px Verdana, Geneva, sans-serif;
+}
+
+hr {
+    border: 1px solid #000;
 }
 
 #header {
