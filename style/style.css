@@ -95,7 +95,7 @@ hr {
 
 @media screen and (max-width: 800px) {
     #content {
-        width: 70%;
+        width: 90%;
         margin: 5px auto;
     }
     
@@ -105,10 +105,6 @@ hr {
 }
 
 @media screen and (max-width: 500px) {
-    #content {
-        width: 90%;
-    }
-    
     #menu a {
         width:40%;
     }
@@ -160,7 +156,7 @@ hr {
     color: #ddfad4;
 }
 
-.site {
+.site, .projectimg {
     width:100%;
     border:1px solid #000;
 }
