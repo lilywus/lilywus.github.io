@@ -143,11 +143,11 @@ hr {
 }
 
 .project a {
-    margin: 5px;
+    padding: 5px;
 }
 
 .project a:hover {
-    background: #222;
+    background: #CCC;
     color: #ddfad4;
 }
 
