@@ -3,14 +3,20 @@
 
 html {
     scroll-behavior: smooth;
+    --main-text-color: #0c0c0c;
+    --main-emphasis-color: #3A5A3B;
+    --sub-emphasis-color: #6a9b6d;
 }
 
 body {
-	font: 14px "Trebuchet MS", Helvetica, sans-serif;
+	font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif; 
+    font-weight: 400;
+    font-size: 1.1em;
 	margin: 0;
 	padding: 0;
-	color: #000;
 	line-height:120%;
+    color: var(--main-text-color);
+	background: #fefffc;
 }
 
 ::-webkit-scrollbar {
@@ -23,63 +29,63 @@ body {
     border-right: 4px solid #fff;
 }
 
+b {
+    color: var(--main-emphasis-color);
+}
+
 a:link {
-	color: #666;
+	color: var(--main-emphasis-color);
 	text-decoration: none; 
 }
-a:visited {
-	color: #666;
-	text-decoration: none;
-}
+
 a:hover {
-	color: #CCC;
-	text-decoration: none;
+	color: var(--sub-emphasis-color);
+	text-decoration: underline;
 }
 
-h1 {
-    font:30px Verdana, Geneva, sans-serif;
-}
-
-h2 {
-    font:26px Verdana, Geneva, sans-serif;
-}
-
-h3 {
-    font:22px Verdana, Geneva, sans-serif;
-}
-
-h4 {
-    font:18px Verdana, Geneva, sans-serif;
+h1, h2, h3, h4 {
+    font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif; 
+    font-weight: 500;
+    color: var(--main-emphasis-color);
 }
 
 hr {
-    border: 1px solid #000;
+    width: 50%;
+    margin: 40px auto;
+    border: 1px dashed var(--main-emphasis-color);
 }
 
 #header {
-    z-index:9999;
-    margin:50px auto 0 auto;
-    width:50%;
-    height:40px;
-    padding:30px;
-    text-align:center;
+    width: 50%;
+    text-align: center;
+    margin: 40px auto;
 }
 
 #menu {
-    z-index:9999;
-    margin:15px auto;
-    left:40px;
-    width:50%;
-    background:url('https://lilywus.github.io/i/pentagon.png') repeat;
-    text-align:center;
+    z-index: 99;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    width: 50%;
+    background: url('https://lilywus.github.io/i/pentagon.png') repeat;
+    font-size: .9em;
+    text-align: center;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
 }
 
 #menu a {
-    display:inline-block;
-    height:15px;
-    padding:10px;
+    display: inline-block;
+    height: 15px;
+    width: 60px;
+    padding: 10px;
     margin:15px;
     border:1px solid transparent;
+    line-height: 100%;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
@@ -87,80 +93,101 @@ hr {
     transition: all .2s ease-in-out;
 }
 
-@media screen and (min-width:501px) {
-    #menu a {
-        width:70px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    #content {
-        width: 90%;
-        margin: 5px auto;
-    }
-    
-    #menu {
-        margin-top: 65px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #menu a {
-        width:40%;
-    }
-    #menu {
-        margin-top:70px;
-    }
-}
-
 #menu a:link, a:visited, a:focus {
     background:#FFF;
 }
 
 #menu a:hover {
-    background:rgba(255, 255, 255, .4);
-/*    color:#fff;*/
+    background:rgba(255, 255, 255, .7);
     border:1px solid #000;
+    text-decoration: none;
 }
 
 #menu a:active {
-    border:1px solid #000;
+    border:1px solid var(--main-emphasis-color);
 }
 
 #content {
-    width:50%;
-    margin:20px auto;
-    padding-bottom:10px;
-    font-size:15px;
-    line-height:1.7em;
+    width: 50%;
+    margin: 20px auto;
+    padding-bottom: 10px;
+    line-height: 1.5em;
 }
 
-#mainimg {
-    float:left;
-    margin:20px;
-    width:25%;
+#profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile img {
+    width: max(25%, 100px);
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#projectsh::before {
+  content: '';
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
 }
 
 .project {
-    margin:15px auto;
-    text-align:center;
-    font-size: 16px;
+    border: 1px solid var(--main-emphasis-color);
+    border-top: 5px solid var(--main-emphasis-color);
+    padding: 10px;
 }
 
-.project a {
-    padding: 5px;
+.project h3 {
+    margin: 5px auto;
+    text-align: center;
 }
 
-.project a:hover {
-    background: #333;
-    color: #ddfad4;
+.project img {
+    width: 100%;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-.site, .projectimg {
-    width:100%;
-    border:1px solid #000;
+.project img:hover {
+    cursor: pointer;
+    filter: grayscale(100%) opacity(50%);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
-.site:hover {
-    opacity: 0.8;
+@media screen and (max-width: 800px) {
+    #content {
+        width: 85%;
+        margin: 5px auto;
+    }
+    
+    #menu {
+        width: 100%;
+    }
+
+    #profile {
+        align-items: flex-start;
+    }
+
+    #profile h2 {
+        margin: 0;
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+    }
 }

@@ -1,43 +1,128 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lily Wu's Portfolio</title>
-<link rel="stylesheet" type="text/css" href="/style/style.css" />
-<head profile="http://www.w3.org/2005/10/profile">
-<link rel="icon"
-      type="image/png"
-      href="i/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PQBYFG5N9D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title>Lily Wu's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="icon"
+        type="image/svg"
+        href="i/leaf.svg">
+    <script src="scroll.js" defer></script>
 
-  gtag('config', 'G-PQBYFG5N9D');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQBYFG5N9D"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PQBYFG5N9D');
+    </script>
 </head>
 
 <body>
 
-<div id="header">
-    <h1>Lily Wu's Portfolio</h1>
-</div>
+    <!-- Site last updated: June 27, 2024 -->
 
-<div id="menu">
-    <a href="/">home</a>
-    <a href="/about">about</a>
-    <a href="/project">projects</a>
-</div>
+    <div id="header">
+        <h1>Lily Wu's Portfolio</h1>
+    </div>
 
-<div id="content">
-    <br />
-    <p>Hello! I'm Lily Wu. I'm interested in navigating interdisciplinary projects in communication and language learning. Here is a snapshot of my work.</p>
-    <p><i>Site last updated: May 29, 2023</i></p>
-</div>
+    <div id="menu">
+        <a href="#header">top</a>
+        <a href="#projectsh">projects</a>
+        <a href="#credith">credit</a>
+    </div>
+
+    <div id="content">
+        <p>Hello! I'm Lily Wu. I'm interested in navigating interdisciplinary projects in communication and language learning. Here is a snapshot of my work.</p>
+
+        <hr>
+
+        <div id="profile">
+            <img src="i/face.png">
+            
+            <div id="introtext">
+                <h2>Lily Wu</h2>
+                <p>B.A., Washington University in St. Louis, May 2020
+                <br>
+                <em>Majors</em>: Japanese Language &amp; Culture, Biology<br />
+                <em>Minor</em>: Data Science in the Humanities
+                </p>
+            </div>
+        </div>
+
+        <br>
+
+        <p>For the past 3 years, I've worked as an Assistant Language Teacher (ALT) with the JET Program in <b>Sapporo, Japan</b>. Visual and written communication have always been important to me, and I'm excited to tell stories and amplify voices in my future work!</p>
+        
+        <p>In university, I had the opportunity to explore website design and biomedical/literary research. These experiences are reflected in my current role planning and teaching lessons with engaging slideshows, blackboard diagrams, and worksheets. I hope to continue working on these skills as well!</p>
+            
+        <p>I love <b>learning new languages</b> (programming or otherwise) and skills!</p>
+
+        <h3 style="margin-bottom: 0;">Skills</h3>
+        <ul style="margin-top:0;list-style-type:square;">
+            <li>Mandarin Chinese, Japanese (JLPT N2)</li>
+            <li>MS Office, Google Workspace, Adobe Creative Cloud</li>
+            <li>HTML/CSS, JavaScript, Python, Java, R</li>
+            <li>Github, Wordpress, Figma, Qualtrics</li>
+        </ul>
+
+        <hr>
+
+        <h2 id="projectsh">Projects</h2>
+
+        <div id="projects">
+            <div class="project">
+                <a href="https://lilywus.github.io/alting/cafes.html" target="_blank"><h3>Sapporo Cafe Hop</a></h3>
+                <a href="https://lilywus.github.io/alting/cafes.html" target="_blank"><img src="i/newsites/cafehop.png"></a>
+                <p>An interactive database of cafes in Sapporo City.</p>
+                <p><b>Tools: </b>Git, HTML, CSS, JS, <a href="https://leafletjs.com/" target="_blank">Leaflet</a></p>
+            </div>
+    
+            <div class="project">
+                <h3><a href="https://lilywus.github.io/alting/cafes.html" target="_blank">ALTing</a></h3>
+                <a href="https://lilywus.github.io/alting/cafes.html" target="_blank"></a><img src="i/newsites/alting.png"></a>
+                <p>A resource and lesson plan collection for teachers of English.</p>
+                <p><b>Tools: </b>Git, HTML, CSS, JS, <a href="https://www.tabulator.info/" target="_blank">Tabulator</a></p>
+            </div>
+
+            <div class="project">
+                <h3><a href="https://lilywus.github.io/alting/cafes.html" target="_blank">Bellabeat Case Study</a></h3>
+                <a href="https://lilywus.github.io/alting/cafes.html" target="_blank"></a><img src="i/newsites/bellabeat.png"></a>
+                <p>A capstone case study completed for the <a href="https://www.coursera.org/account/accomplishments/professional-cert/2QDX8C36QSD7?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof" target="_blank">Google Data Analytics certificate</a></p>
+                <p><b>Tools: </b>Kaggle, R, RStudio</p>
+            </div>
+
+            <div class="project">
+                <h3><a href="https://lilywus.github.io/alting/cafes.html" target="_blank">Jackie Adams Website</a></h3>
+                <a href="https://lilywus.github.io/alting/cafes.html" target="_blank"></a><img src="i/newsites/jackieadams.png"></a>
+                <p>A website first created in Fall 2017, regularly updated for author Jackie Adams.</p>
+                <p><b>Tools: </b>Wordpress, SEO, HTML</p>
+            </div>
+
+            <div class="project">
+                <h3><a href="https://lilywus.github.io/alting/cafes.html" target="_blank">Kuniyoshi's Demons</a></h3>
+                <a href="https://lilywus.github.io/alting/cafes.html" target="_blank"></a><img src="i/newsites/kuniyoshi.png"></a>
+                <p>A senior capstone project completed for my Japanese major, exploring the use of supernatural beings in a collection of woodblock prints.</p>
+                <p><b>Tools: </b>StoryMaps, ArcGIS, Photoshop</p>
+            </div>
+
+            <div class="project">
+                <h3>Fiber crafts</h3>
+                <img src="i/newsites/bearpair.png">
+                <p>I've been crocheting for around 14 years and have recently picked up knitting as well! In my spare time I love to create pieces for friends and family, and am (very slowly) branching into making clothes.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2 id="credith">Credit</h2>
+        <p>Favicon from <a href="https://lifeomic.github.io/chromicons.com/">https://lifeomic.github.io/chromicons.com/</a></p>
+        <p>My design sense has been heavily influenced by the various websites I've worked on throughout the years. I owe a lot to the mentors and peers I have had the honor of working with! Additionally, my recent JavaScript adventures are made possible by <a href="https://www.theodinproject.com/" target="_blank">The Odin Project's</a> thorough curriculumn. </p>
+    </div>
 
 </body>
 </html>
